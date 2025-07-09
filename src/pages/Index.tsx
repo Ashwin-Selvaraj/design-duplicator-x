@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Header } from '@/components/Header';
 import { UserGreeting } from '@/components/UserGreeting';
@@ -35,17 +36,17 @@ const Index = () => {
   ];
 
   return (
-    <div className="bg-black flex max-w-[480px] w-full flex-col overflow-hidden items-center mx-auto py-[15px] rounded-xl">
-      <div className="self-stretch flex w-full flex-col items-stretch pb-[47px] px-[15px]">
+    <div className="bg-black flex w-full max-w-[480px] sm:max-w-[400px] xs:max-w-[360px] flex-col overflow-hidden items-center mx-auto py-3 sm:py-4 md:py-[15px] px-2 sm:px-3 rounded-xl min-h-screen">
+      <div className="self-stretch flex w-full flex-col items-stretch pb-8 sm:pb-10 md:pb-[47px] px-2 sm:px-3 md:px-[15px]">
         <Header />
         
         <UserGreeting />
         
         <ChallengeFriends />
         
-        <div className="w-[120px] shrink-0 h-0 mt-5" />
+        <div className="w-full h-4 sm:h-5 md:h-[20px] mt-3 sm:mt-4 md:mt-5" />
         
-        <main className="flex min-h-[213px] gap-3">
+        <main className="flex flex-col sm:flex-row min-h-[180px] sm:min-h-[213px] gap-3 sm:gap-3 items-center sm:items-start">
           <Leaderboard />
           <TaskCompletion />
         </main>
@@ -57,9 +58,9 @@ const Index = () => {
       
       <TapperModes />
       
-      <section className="w-full max-w-[363px] text-center leading-loose mt-5">
+      <section className="w-full max-w-[363px] px-2 sm:px-3 text-center leading-loose mt-3 sm:mt-4 md:mt-5">
         {gameRankings.map((game, index) => (
-          <div key={game.id} className={index > 0 ? "mt-[13px]" : ""}>
+          <div key={game.id} className={index > 0 ? "mt-2 sm:mt-3 md:mt-[13px]" : ""}>
             <GameRankingCard
               imageUrl={game.imageUrl}
               title={game.title}

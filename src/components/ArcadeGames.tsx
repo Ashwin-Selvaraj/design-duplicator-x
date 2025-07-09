@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GameCard } from './GameCard';
 
@@ -9,32 +10,32 @@ export const ArcadeGames: React.FC = () => {
   ];
 
   return (
-    <section className="text-center mt-5">
-      <div className="flex min-h-[174px] w-full max-w-[363px] flex-col items-stretch justify-center">
-        <header className="flex items-center gap-[40px_162px] text-sm text-white font-extrabold leading-none justify-center">
+    <section className="text-center mt-4 sm:mt-5">
+      <div className="flex min-h-[140px] sm:min-h-[160px] md:min-h-[174px] w-full max-w-[363px] flex-col items-stretch justify-center">
+        <header className="flex items-center gap-8 sm:gap-20 md:gap-[162px] text-xs sm:text-sm text-white font-extrabold leading-none justify-center">
           <h2 className="self-stretch my-auto">
             Arcade Games
           </h2>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/25b6f327ff424639b45449f8a174839d/ec9ef3904e312a02e200cacd92c320674bed1811?placeholderIfAbsent=true"
-            className="aspect-[1.15] object-contain w-[15px] self-stretch shrink-0 my-auto"
+            className="aspect-[1.15] object-contain w-3 sm:w-4 md:w-[15px] self-stretch shrink-0 my-auto"
             alt="More options"
           />
         </header>
-        <div className="overflow-x-auto flex w-full items-center gap-3 overflow-hidden text-[9px] text-[rgba(224,221,221,1)] font-semibold leading-none mt-[22px]">
+        <div className="overflow-x-auto flex w-full items-center gap-2 sm:gap-3 overflow-hidden text-[8px] sm:text-[9px] text-[rgba(224,221,221,1)] font-semibold leading-none mt-4 sm:mt-5 md:mt-[22px] px-2 sm:px-0">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/25b6f327ff424639b45449f8a174839d/ea54e3b17fa496c9badf2af47c8ce26e5e900d9b?placeholderIfAbsent=true"
-            className="aspect-[0.99] object-contain w-[135px] shadow-[0px_5px_4px_rgba(0,0,0,0.25)] self-stretch shrink-0 my-auto rounded-[7px]"
+            className="aspect-[0.99] object-contain w-28 sm:w-32 md:w-[135px] shadow-[0px_5px_4px_rgba(0,0,0,0.25)] self-stretch shrink-0 my-auto rounded-[7px]"
             alt="Featured game"
           />
           <img
             src="https://cdn.builder.io/api/v1/image/assets/25b6f327ff424639b45449f8a174839d/fe0f2f7faebd74e0f2f59e0e46e786dddd1ac1b8?placeholderIfAbsent=true"
-            className="aspect-[0.87] object-contain w-[119px] shadow-[0px_5px_4px_rgba(0,0,0,0.25)] self-stretch shrink-0 my-auto rounded-[7px]"
+            className="aspect-[0.87] object-contain w-24 sm:w-28 md:w-[119px] shadow-[0px_5px_4px_rgba(0,0,0,0.25)] self-stretch shrink-0 my-auto rounded-[7px]"
             alt="Game 2"
           />
           <img
             src="https://cdn.builder.io/api/v1/image/assets/25b6f327ff424639b45449f8a174839d/50ca4690cbd0a62ddd8ca08198536299e14e5526?placeholderIfAbsent=true"
-            className="aspect-[0.87] object-contain w-[119px] shadow-[0px_5px_4px_rgba(0,0,0,0.25)] self-stretch shrink-0 my-auto rounded-[7px]"
+            className="aspect-[0.87] object-contain w-24 sm:w-28 md:w-[119px] shadow-[0px_5px_4px_rgba(0,0,0,0.25)] self-stretch shrink-0 my-auto rounded-[7px]"
             alt="Game 3"
           />
           {games.map((game) => (
