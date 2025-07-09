@@ -21,7 +21,7 @@ export const QuickMenu: React.FC = () => {
   };
 
   return (
-    <div className="relative self-center z-20 mt-[-80px] sm:mt-[-90px] md:mt-[-101px]">
+    <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
       <button 
         className={`bg-[rgba(123,32,237,1)] shadow-[0px_12px_24px_rgba(0,0,0,0.91)] flex gap-2 text-lg sm:text-xl text-white font-bold px-6 sm:px-8 md:px-[30px] py-3 sm:py-4 md:py-[15px] rounded-[64px] hover:bg-[rgba(123,32,237,0.9)] transition-all ${isExpanded ? 'scale-105' : ''}`}
         onClick={handleMenuClick}
@@ -30,7 +30,7 @@ export const QuickMenu: React.FC = () => {
       </button>
       
       {isExpanded && (
-        <div className="absolute top-full mt-4 left-1/2 transform -translate-x-1/2 bg-[rgba(32,32,32,0.95)] backdrop-blur-sm rounded-2xl p-6 shadow-[0px_8px_32px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.1)]">
+        <div className="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 bg-[rgba(32,32,32,0.95)] backdrop-blur-sm rounded-2xl p-6 shadow-[0px_8px_32px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.1)]">
           <div className="grid grid-cols-4 gap-6 w-[320px]">
             {menuItems.map((item, index) => {
               const IconComponent = item.icon;
